@@ -1,0 +1,8 @@
+:root {
+	--primary-color-main: red;
+	--primary-color-contrast-text: white;
+}
+
+body {
+	font-family: sans-serif;
+}

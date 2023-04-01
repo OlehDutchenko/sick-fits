@@ -15,6 +15,8 @@ by Wes Bos course "Fullstack Advanced React &amp; GraphQL"
 -   Prettier:
     -   bump to the latest version
     -   add own config
+-   Styles:
+    -   CSS Modules instead of styled-components
 
 **Backend:**
 

@@ -1,0 +1,8 @@
+.logo {
+	background: var(--primary-color-main);
+}
+
+.logoLink {
+	color: var(--primary-color-contrast-text);
+	text-decoration: none;
+}
