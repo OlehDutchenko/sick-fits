@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 export const Logo: React.FC = () => {
 	return (
 		<h1 className={styles.logo}>
-			<Link href="/" className={styles.logoLink}>
+			<Link href="/frontend/public" className={styles.logoLink}>
 				Sick Fits
 			</Link>
 		</h1>
