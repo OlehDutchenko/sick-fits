@@ -1,5 +1,5 @@
-import { Logo } from "Components/Logo";
-import { Nav } from "Components/Nav";
+import { Logo } from 'Components/Logo';
+import { Nav } from 'Components/Nav';
 import React from 'react';
 import styles from './styles.module.css';
 

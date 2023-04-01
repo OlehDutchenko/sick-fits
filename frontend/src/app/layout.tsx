@@ -1,3 +1,4 @@
+import { Container } from 'Components/Container';
 import { Header } from 'Components/Header';
 import { Metadata } from 'next';
 import React from 'react';
@@ -15,8 +16,10 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 				<link rel="shortcut icon" href="/static/favicon.png" />
 			</head>
 			<body>
-				<Header />
-				{children}
+				<Container>
+					<Header />
+					{children}
+				</Container>
 			</body>
 		</html>
 	);
