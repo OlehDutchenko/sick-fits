@@ -1,0 +1,16 @@
+.bar {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	justify-content: space-between;
+	align-content: center;
+	border-bottom: 10px solid var(--color-common-border-dark);
+}
+
+
+.subBar {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	justify-content: space-between;
+	align-content: center;
+	border-bottom: 1px solid var(--color-common-border-dark);
+}

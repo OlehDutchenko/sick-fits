@@ -1,5 +1,4 @@
-import { Logo } from 'Components/Logo';
-import { Nav } from 'Components/Nav';
+import { Header } from 'Components/Header';
 import { Metadata } from 'next';
 import React from 'react';
 import './global.css';
@@ -16,15 +15,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 				<link rel="shortcut icon" href="/static/favicon.png" />
 			</head>
 			<body>
-				<header>
-					<div className="bar">
-						<Logo />
-					</div>
-					<div className="sub-bar">
-						<p>Search</p>
-					</div>
-					<Nav />
-				</header>
+				<Header />
 				{children}
 			</body>
 		</html>

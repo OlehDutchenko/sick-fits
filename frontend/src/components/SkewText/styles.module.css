@@ -1,0 +1,21 @@
+.skewText {
+	position: relative;
+	color: var(--color-primary-contrast-text);
+}
+
+.skewText::before {
+	content: '';
+	transform: skew(-7deg);
+	position: absolute;
+	left: -0.2em;
+	right: -0.2em;
+	top: 0;
+	bottom: 0;
+	background: var(--color-primary-main);
+	pointer-events: none;
+}
+
+.skewText > * {
+	position: relative;
+	color: inherit;
+}

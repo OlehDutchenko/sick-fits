@@ -1,6 +1,8 @@
 :root {
-	--primary-color-main: red;
-	--primary-color-contrast-text: white;
+	--color-primary-main: red;
+	--color-primary-contrast-text: white;
+
+	--color-common-border-dark: black;
 }
 
 body {
