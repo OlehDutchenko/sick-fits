@@ -1,21 +1,78 @@
 {
-	"extends": ["wesbos", "next"],
-	"parser": "@typescript-eslint/parser",
+	"root": true,
+	"extends": ["@wezom/eslint-config", "eslint-config-prettier", "next"],
+	"parser": "@babel/eslint-parser",
 	"parserOptions": {
-		"ecmaFeatures": {
-			"jsx": true
-		}
+		"requireConfigFile": false
+	},
+	"plugins": ["jest"],
+	"env": {
+		"jest/globals": true
 	},
 	"rules": {
-		"arrow-body-style": 0,
-		"no-use-before-define": 0,
-		"import/no-extraneous-dependencies": 0,
-		"import/no-unresolved": 0,
-		"react/jsx-filename-extension": 0
+		"no-use-before-define": [
+			2,
+			{
+				"functions": false,
+				"classes": true,
+				"variables": true
+			}
+		],
+		"jsx-a11y/anchor-is-valid": 0,
+		"react/display-name": 0,
+		"react-hooks/rules-of-hooks": 2,
+		"react-hooks/exhaustive-deps": 2
 	},
-	"settings": {
-		"react": {
-			"version": "detect"
+	"overrides": [
+		{
+			"files": ["*.ts"],
+			"extends": ["@wezom/eslint-config-ts", "eslint-config-prettier"],
+			"parserOptions": {
+				"project": "./tsconfig.eslint.json"
+			},
+			"rules": {
+				"no-useless-constructor": 0,
+				"@typescript-eslint/no-use-before-define": [
+					2,
+					{
+						"functions": false,
+						"classes": true,
+						"variables": true,
+						"enums": true,
+						"typedefs": true,
+						"ignoreTypeReferences": true
+					}
+				]
+			}
+		},
+		{
+			"files": ["*.tsx"],
+			"extends": [
+				"@wezom/eslint-config-ts-react",
+				"eslint-config-next",
+				"eslint-config-next/core-web-vitals",
+				"eslint-config-prettier"
+			],
+			"parserOptions": {
+				"project": "./tsconfig.eslint.json"
+			},
+			"rules": {
+				"@typescript-eslint/no-use-before-define": [
+					2,
+					{
+						"functions": false,
+						"classes": true,
+						"variables": true,
+						"enums": true,
+						"typedefs": true,
+						"ignoreTypeReferences": true
+					}
+				],
+				"jsx-a11y/anchor-is-valid": 0,
+				"react/display-name": 0,
+				"react-hooks/rules-of-hooks": 2,
+				"react-hooks/exhaustive-deps": 2
+			}
 		}
-	}
+	]
 }

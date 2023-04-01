@@ -1,0 +1,5 @@
+.next
+.refs
+generated/
+src/Dictionaries/GQL/types.ts
+src/Dictionaries/GQL/enums.ts

@@ -18,12 +18,11 @@ by Wes Bos course "Fullstack Advanced React &amp; GraphQL"
 -   Styles:
     -   CSS Modules instead of styled-components
 -   Eslint
-    -   remove configuration from `package.json` to `.eslintrc.json`
-    -   add Next.JS config
-    -   turned off the rules that are not acceptable to me
+    -   move configuration from `package.json` to `.eslintrc.json`
+    -   change the settings according to my own vision
 -   Jest
     -   bump Jest to latest version
-    -   remove configuration from `package.json` to `jest.setup.config`
+    -   move configuration from `package.json` to `jest.setup.config`
     -   upgrade `jest.setup.js`
 
 **Backend:**

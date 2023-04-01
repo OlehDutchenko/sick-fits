@@ -20,7 +20,8 @@
 		],
 		"baseUrl": "./src/",
 		"paths": {
-			"Components/*": ["./components/*"]
+			"Components/*": ["./components/*"],
+			"Dictionaries/*": ["./dictionaries/*"]
 		}
 	},
 	"include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
