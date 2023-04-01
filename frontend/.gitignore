@@ -1,4 +1,6 @@
+.cache/
 .next/
 .vscode/
+coverage/
 node_modules/
 next-env.d.ts
