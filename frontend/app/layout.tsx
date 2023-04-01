@@ -1,4 +1,6 @@
+import { Nav } from 'Components/Nav';
 import { Metadata } from 'next';
+import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
@@ -10,7 +12,15 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 	return (
 		<html lang="en">
 			<body>
-				<div>Logo</div>
+				<header>
+					<div className="bar">
+						<Link href="/">Sick Fits</Link>
+					</div>
+					<div className="sub-bar">
+						<p>Search</p>
+					</div>
+					<Nav />
+				</header>
 				{children}
 			</body>
 		</html>
