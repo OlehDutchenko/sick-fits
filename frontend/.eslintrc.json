@@ -1,10 +1,6 @@
 {
 	"root": true,
 	"extends": ["@wezom/eslint-config", "eslint-config-prettier", "next"],
-	"parser": "@babel/eslint-parser",
-	"parserOptions": {
-		"requireConfigFile": false
-	},
 	"plugins": ["jest"],
 	"env": {
 		"jest/globals": true
